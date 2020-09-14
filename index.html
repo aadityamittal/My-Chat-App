@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real time chat app</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <!-- using defer scripts will be loaded in background and dom will be loaded 1st -->
+    <script defer src="/js/client.js"></script>
+    <!-- Above script included to join server and client -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <nav>
+        
+        <div class="logo">
+            <img src="static/logo.png" alt="">
+        </div>
+        <h1>
+            Welcome to MY Chat App
+        </h1>
+    </nav>
+    <div class="container">
+        <!-- <div class="message right">Harry: Hey how are you?</div> -->
+        <!-- <div class="message left">Rohan: Hey I am fine.How are you?</div> -->
+    </div>
+    <div class="send">
+        <form action="#" id = "send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type = "submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
